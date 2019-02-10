@@ -11,7 +11,9 @@ Docker image based on Cloud Native Buildpacks ([buildpacks.io](https://buildpack
 * Docker: 18.09.1
 * Buildpacks.io Pack: v0.0.9
 
-* `v0.0.9`, `latest`
+## Supported tags and respective Dockerfile links
+
+* `v0.0.9`, `[latest](https://github.com/j-tim/docker-buildpacks-pack/blob/master/v0.0.9/Dockerfile)`
 
 ## Example how to build a project using Gitlab CI (.gitlab-ci.yml)
 
@@ -26,3 +28,7 @@ pack-job:
     - pack build $CI_REGISTRY_IMAGE
     - docker push $CI_REGISTRY_IMAGE
 ```
+
+## Automated build for Dockerhub
+
+See dockerhub: [https://hub.docker.com/r/jtim/docker-buildpacks-pack](https://hub.docker.com/r/jtim/docker-buildpacks-pack)
